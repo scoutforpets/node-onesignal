@@ -1,0 +1,24 @@
+{
+  "name": "node-onesignal",
+  "version": "0.1.0",
+  "description": "Node wrapper for the One Signal API",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoutforpets/node-onesignal.git"
+  },
+  "keywords": [
+    "onesignal",
+    "push",
+    "node"
+  ],
+  "author": "James Dixon <jim.w.dixon@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scoutforpets/node-onesignal/issues"
+  },
+  "homepage": "https://github.com/scoutforpets/node-onesignal#readme"
+}
