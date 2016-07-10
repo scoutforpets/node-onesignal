@@ -7,7 +7,8 @@
     "build": "./node_modules/.bin/babel -q -L -D ./lib/ --out-dir ./dist/",
     "prepublish": "npm run clean && npm run build",
     "test": "npm run prepublish && ava -v -r ./dotenv -r dotenv/config -r babel-register",
-    "clean": "rm -rf dist/"
+    "clean": "rm -rf dist/",
+    "coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
