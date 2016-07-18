@@ -28,8 +28,6 @@ client.sendNotification('test notification', {
 
 * `options`_(object)_ - OneSignal options. Please see the [OneSignal documentation](https://documentation.onesignal.com/docs/notifications-create-notification).
 
-**NOTE:** This methods sends to _all_ subscribers by default if not `options` are provided.
-
 As you can see, this SDK does not implement all of the methods available through the OneSignal REST API. If there are other methods you require, please open an issue or feel free to create a PR (with tests!).
 
 ## Contributing
