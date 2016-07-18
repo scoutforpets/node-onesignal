@@ -33,10 +33,11 @@
     "babel-preset-stage-2": "6.11.0",
     "babel-register": "6.9.0",
     "dotenv": "2.0.0",
-    "find-up": "1.1.2"
+    "find-up": "1.1.2",
+    "superagent-mock": "1.10.0"
   },
   "dependencies": {
-    "joi": "9.0.0",
-    "superagent": "2.0.0"
+    "joi": "9.0.1",
+    "superagent": "2.1.0"
   }
 }
