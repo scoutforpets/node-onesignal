@@ -8,9 +8,8 @@ test('sends a notification (message as string)', async t => {
 
     const client = new Client(process.env.APP_ID, process.env.REST_API_KEY);
 
-    const message = 'Let the playas play!';
+    const message = 'Test Message';
     const options = {
-        isIos: true,
         included_segments: 'all'
     };
 
@@ -24,11 +23,10 @@ test('sends a notification (message as object)', async t => {
     const client = new Client(process.env.APP_ID, process.env.REST_API_KEY);
 
     const message = {
-        en: 'Let the playas play!'
+        en: 'Test Message'
     };
 
     const options = {
-        isIos: true,
         included_segments: 'all'
     };
 
@@ -41,10 +39,8 @@ test('handles API error', async t => {
 
     const client = new Client(process.env.APP_ID, process.env.REST_API_KEY);
 
-    const message = 'Let the playas play!';
-    const options = {
-        isIos: true
-    };
+    const message = 'Test Message';
+    const options = {};
 
     const response = client.sendNotification(message, options);
 
