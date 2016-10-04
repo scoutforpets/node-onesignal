@@ -2,7 +2,7 @@
   "name": "node-onesignal",
   "version": "0.2.0",
   "description": "Node wrapper for the One Signal API",
-  "main": "./dist/onesignal.js",
+  "main": "./dist/client.js",
   "scripts": {
     "build": "./node_modules/.bin/babel -q -L -D ./lib/ --out-dir ./dist/",
     "prepublish": "npm run clean && npm run build",
