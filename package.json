@@ -1,6 +1,6 @@
 {
   "name": "node-onesignal",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Node wrapper for the One Signal API",
   "main": "./dist/client.js",
   "scripts": {
