@@ -11,9 +11,13 @@ const OneSignalClient = require('node-onesignal');
 const client = new OneSignalClient([YOUR APP ID], [YOUR REST API KEY]);
 
 // send a notification
-client.sendNotification('test notification', {
-    included_segments: 'all'
-});
+try {
+  const response = client.sendNotification('test notification', {
+      included_segments: 'all'
+  });
+} catch (err) {
+  console.error(err);
+}
 ```
 
 ## API
