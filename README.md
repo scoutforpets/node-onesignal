@@ -14,6 +14,13 @@ const client = new OneSignalClient([YOUR APP ID], [YOUR REST API KEY]);
 client.sendNotification('test notification', {
     included_segments: 'all'
 });
+
+// update device info
+client.editDeviceInfo('deviceId12345', {
+    'tags': {
+      'hasUpdated': 'true'
+    }
+});
 ```
 
 ## API
@@ -26,7 +33,12 @@ client.sendNotification('test notification', {
 `sendNotification(message, options)`
 * `message`_(string/object, required)_ - the content of your message. **Note:** when passing an object, please see the [OneSignal documentation](https://documentation.onesignal.com/docs/notifications-create-notification) for details on the format.
 
-* `options`_(object)_ - OneSignal options. Please see the [OneSignal documentation](https://documentation.onesignal.com/docs/notifications-create-notification).
+* `options`_(object)_ - OneSignal options. Please see the [OneSignal documentation](https://documentation.onesignal.com/reference#create-notification).
+
+`editDeviceInfo(deviceId, options)`
+* `deviceId`_(string, required)_ - the device's OneSignal ID.
+
+* `options`_(object, required)_ - OneSignal options. Please see the [OneSignal documentation](https://documentation.onesignal.com/reference#edit-device).
 
 As you can see, this SDK does not implement all of the methods available through the OneSignal REST API. If there are other methods you require, please open an issue or feel free to create a PR (with tests!).
 
