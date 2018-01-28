@@ -16,7 +16,7 @@ client.sendNotification('test notification', {
 });
 
 // update device info
-client.sendNotification('deviceId12345', {
+client.editDeviceInfo('deviceId12345', {
     'tags': {
       'hasUpdated': 'true'
     }
